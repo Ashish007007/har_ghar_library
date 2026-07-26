@@ -23,6 +23,7 @@
         <module>api-gateway</module>
         <module>user-service</module>
         <module>book-catalog-service</module>
+        <module>geo-search-service</module>
     </modules>
 
     <properties>
