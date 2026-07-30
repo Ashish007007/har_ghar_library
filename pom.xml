@@ -25,6 +25,7 @@
         <module>book-catalog-service</module>
         <module>geo-search-service</module>
         <module>rental-order-service</module>
+        <module>rare-book-service</module>
     </modules>
 
     <properties>
