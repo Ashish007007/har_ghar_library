@@ -5,8 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.harghar.library.rentalorderservice.client.dto.BookCatalogBookResponse;
+import com.harghar.library.rentalorderservice.config.FeignClientConfig;
 
-@FeignClient(name = "book-catalog-service")
+@FeignClient(name = "book-catalog-service", configuration = FeignClientConfig.class)
 public interface BookCatalogClient {
 
     @GetMapping("/api/books/{id}")

@@ -41,6 +41,13 @@ public class GlobalExceptionHandler {
         return ResponseEntity.badRequest().body(build(HttpStatus.BAD_REQUEST, "Validation failed", request, validationErrors));
     }
 
+    @ExceptionHandler(UpstreamServiceException.class)
+    public ResponseEntity<ApiErrorResponse> handleUpstream(UpstreamServiceException ex, HttpServletRequest request) {
+        HttpStatus status = ex.getStatusCode() == 404 ? HttpStatus.NOT_FOUND : HttpStatus.BAD_GATEWAY;
+        return ResponseEntity.status(status)
+                .body(build(status, ex.getMessage(), request, null));
+    }
+
     @ExceptionHandler(FeignException.class)
     public ResponseEntity<ApiErrorResponse> handleFeign(FeignException ex, HttpServletRequest request) {
         return ResponseEntity.status(HttpStatus.BAD_GATEWAY)
