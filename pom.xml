@@ -26,6 +26,7 @@
         <module>geo-search-service</module>
         <module>rental-order-service</module>
         <module>rare-book-service</module>
+        <module>chat-service</module>
     </modules>
 
     <properties>
