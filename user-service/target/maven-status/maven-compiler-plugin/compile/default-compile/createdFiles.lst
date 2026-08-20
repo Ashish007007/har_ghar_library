@@ -1,1 +1,16 @@
+com\harghar\library\userservice\controller\UserProfileController.class
+com\harghar\library\userservice\dto\UserProfileResponse$UserProfileResponseBuilder.class
+com\harghar\library\userservice\exception\DuplicateResourceException.class
+com\harghar\library\userservice\service\UserProfileServiceImpl.class
+com\harghar\library\userservice\entity\UserProfile$UserProfileBuilder.class
+com\harghar\library\userservice\service\UserProfileService.class
+com\harghar\library\userservice\exception\ApiErrorResponse.class
+com\harghar\library\userservice\entity\UserProfile.class
 com\harghar\library\userservice\UserServiceApplication.class
+com\harghar\library\userservice\dto\CreateUserProfileRequest.class
+com\harghar\library\userservice\exception\ResourceNotFoundException.class
+com\harghar\library\userservice\dto\UserProfileResponse.class
+com\harghar\library\userservice\exception\GlobalExceptionHandler.class
+com\harghar\library\userservice\dto\UpdateUserProfileRequest.class
+com\harghar\library\userservice\exception\ApiErrorResponse$ApiErrorResponseBuilder.class
+com\harghar\library\userservice\repository\UserProfileRepository.class

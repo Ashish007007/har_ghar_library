@@ -1,0 +1,48 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user-service-route
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/api/users/**
+
+        - id: book-catalog-service-route
+          uri: lb://BOOK-CATALOG-SERVICE
+          predicates:
+            - Path=/api/books/**
+
+        - id: geo-search-service-route
+          uri: lb://GEO-SEARCH-SERVICE
+          predicates:
+            - Path=/api/geo/**
+
+        - id: rental-order-service-route
+          uri: lb://RENTAL-ORDER-SERVICE
+          predicates:
+            - Path=/api/rentals/**
+
+        - id: rare-book-service-route
+          uri: lb://RARE-BOOK-SERVICE
+          predicates:
+            - Path=/api/rare-books/**
+
+        - id: chat-service-route
+          uri: lb://CHAT-SERVICE
+          predicates:
+            - Path=/api/chat/**
+
+        - id: notification-service-route
+          uri: lb://NOTIFICATION-SERVICE
+          predicates:
+            - Path=/api/notifications/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

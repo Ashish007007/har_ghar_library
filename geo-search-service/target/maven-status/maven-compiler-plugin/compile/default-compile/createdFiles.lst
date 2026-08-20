@@ -1,0 +1,17 @@
+com\harghar\library\geosearchservice\config\FeignClientConfig.class
+com\harghar\library\geosearchservice\entity\BookGeoLocation.class
+com\harghar\library\geosearchservice\exception\ApiErrorResponse.class
+com\harghar\library\geosearchservice\exception\ApiErrorResponse$ApiErrorResponseBuilder.class
+com\harghar\library\geosearchservice\repository\BookGeoLocationRepository.class
+com\harghar\library\geosearchservice\service\GeoSearchService.class
+com\harghar\library\geosearchservice\client\dto\UserProfileClientResponse.class
+com\harghar\library\geosearchservice\controller\GeoSearchController.class
+com\harghar\library\geosearchservice\config\FeignClientConfig$1.class
+com\harghar\library\geosearchservice\client\dto\BookCatalogBookResponse.class
+com\harghar\library\geosearchservice\entity\BookGeoLocation$BookGeoLocationBuilder.class
+com\harghar\library\geosearchservice\client\BookCatalogClient.class
+com\harghar\library\geosearchservice\exception\UpstreamServiceException.class
+com\harghar\library\geosearchservice\GeoSearchServiceApplication.class
+com\harghar\library\geosearchservice\exception\GlobalExceptionHandler.class
+com\harghar\library\geosearchservice\service\GeoSearchServiceImpl.class
+com\harghar\library\geosearchservice\client\UserServiceClient.class
